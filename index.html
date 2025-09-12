@@ -101,8 +101,10 @@
 					}
 					function changeName() {
 						const new_name = window.prompt("Your name?", "WVN124(Nguyễn Xuân Sơn)")
-						localStorage.setItem("name", new_name)
-						name.innerHTML = new_name
+						if (new_name) {
+							localStorage.setItem("name", new_name)
+							name.innerHTML = new_name
+						}
 					}
 				</script>
 				<div id="dateTime3">00:00</div>
