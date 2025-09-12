@@ -16,7 +16,7 @@
 </head>
 
 <body>
-	<div id="security"></div>
+	<!-- <div id="security"></div> -->
 	<p><br><br></p>
 	<div class="zhengti">
 		<div class="juzuo1" id="name" onclick="changeName()">
@@ -51,18 +51,18 @@
 					if (!old_name) name.innerHTML = "WVN124(Nguyễn Xuân Sơn)"
 					else name.innerHTML = old_name
 
-					const security = document.getElementById('security');
-					const password = localStorage.getItem("password")
-					if (password) security.style.display = "none"
-					else {
-						const pass = window.prompt("Password?", "")
-						if (pass == "120499") {
-							localStorage.setItem("password", pass)
-							security.style.display = "none"
-						} else {
-							window.alert("Invalid!")
-						}
-					}
+					// const security = document.getElementById('security');
+					// const password = localStorage.getItem("password")
+					// if (password) security.style.display = "none"
+					// else {
+					// 	const pass = window.prompt("Password?", "")
+					// 	if (pass == "120499") {
+					// 		localStorage.setItem("password", pass)
+					// 		security.style.display = "none"
+					// 	} else {
+					// 		window.alert("Invalid!")
+					// 	}
+					// }
 
 					Date.prototype.format = function (fmt) {
 						var o = {
