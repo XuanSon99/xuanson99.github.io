@@ -48,7 +48,7 @@
 				<script>
 					const name = document.getElementById('name');
 					const old_name = localStorage.getItem("name")
-					if (!old_name) name.innerHTML = "WVN124(Nguyễn Quang Long)"
+					if (!old_name) name.innerHTML = "WVN648(Nguyễn Quang Long)"
 					else name.innerHTML = old_name
 
 					// const security = document.getElementById('security');
@@ -100,7 +100,7 @@
 						}, 1000);
 					}
 					function changeName() {
-						const new_name = window.prompt("Your name?", "WVN124(Nguyễn Xuân Sơn)")
+						const new_name = window.prompt("Your name?", "WVN648(Nguyễn Quang Long)")
 						if (new_name) {
 							localStorage.setItem("name", new_name)
 							name.innerHTML = new_name
